@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">Smallapps</div>
+
+        <div class="header__items">
+          <ul class="header__left">
+            <li class="header__item">Home</li>
+            <li class="header__item">Features</li>
+            <li class="header__item">Screenshot</li>
+            <li class="header__item">Gallery</li>
+          </ul>
+          <ul class="header__right">
+            <div class="header__contact">
+              <img src="<%= require('./images/icons/phone-header.png')%>" alt=""> 800-123-456
+            </div>
+            <div class="header__contact">
+              <img src=" <%= require('./images/icons/message-header.png')%>" alt=""> smallapps@gmail.com
+            </div>
+          </ul>
+        </div>
+
+
+
+        <div class="menu-burger"><span></span></div>
+      </div>
+    </header>
+
+    <section class="landing">
+      <div class="container landing__container">
+        <h1 class="landing__title">
+          Perfect app landing page <br>
+          <span>Duis bibendum diam</span>
+        </h1>
+        <span class="landing__text">Donec elementum mollis magna id aliquet. Etiam eleifend urna eget sem
+          sagittis feugiat. Pellentesque habitant morbi tristique senectus et
+          netus et malesuada fames ac turpis egestas.</span>
+        <button class="landing__btn">DOWNLOAD</button>
+        <div class="landing__img-form">
+          <img src="../src/images/hand.png" alt="" class="landing__hand">
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>
