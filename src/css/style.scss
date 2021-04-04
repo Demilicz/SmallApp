@@ -3,6 +3,7 @@
 @import '../fonts/raleway/fonts.css';
 @import '../fonts/raleway_bold/fonts.css';
 @import '../fonts/raleway_thin/fonts.css';
+@import '../awesome/icons-font.css';
 
 
 @import '../css/common-style/style.css';
@@ -11,8 +12,10 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9;
   width: 100%;
   background: white;
+
 
   &__container {
     display: flex;
@@ -109,6 +112,7 @@
     text-align: left;
     color: #ffffff;
     line-height: 1.2;
+    z-index: 1;
     span {
       font-family: 'Raleway_Thin';
     }
@@ -121,6 +125,7 @@
     line-height: 1.71;
     width: 486px;
     margin-left: 102px;
+    z-index: 1;
   }
 
   &__btn {
@@ -134,6 +139,7 @@
     padding: 15px 0;
     margin-left: 102px;
     margin-top: 48px;
+    z-index: 1;
   }
   &__img-form {
     position: relative;
@@ -145,8 +151,92 @@
   &__hand {
     position: absolute;
     bottom: 0;
-    right: 100px;
+    right: 108px;
+  }
+}
 
+.heading {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-family: 'Raleway_bold';
+    margin: 104px 0 33px 0;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Raleway_Thin';
+    width: 751px;
+    text-align: center;
+    color: #afb8b8;
+  }
+
+  &__tabs {
+    display: flex;
+  }
+
+  &__links {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 75px;
+  }
+
+  &__link {
+
+    font-size: 19px;
+    text-align: left;
+    color: #9fa9a9;
+    display: flex;
+    align-items: center;
+    padding:  30px 20px 30px 0;
+    .icon {
+      font-size: 50px;
+      padding-right: 43px;
+    }
+
+
+  }
+  &__line {
+    width: 1px;
+    height: 600px;
+    margin: 60px 8px 109px 28px;
+    background-color: #dbe2e2;
+  }
+  &__blocks {
+    flex: 0 0 60%;
+
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 140px 0  0 150px;
+    align-items: center;
+
+    .icon {
+      font-size: 200px;
+      color: #5dca88;
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+    span {
+      font-size: 16px;
+      line-height: 1.5;
+      padding-top: 30px;
+      text-align: left;
+      color: #afb8b8;
+    }
   }
 }
 
@@ -156,6 +246,7 @@
 
 
 // Suports class
+
 .menu-burger{
   display: none;
 }
@@ -164,6 +255,18 @@
 }
 .d-none {
   display: none;
+}
+._active-tab {
+  color: #5dca88;
+  position: relative;
+  &::after {
+    position: absolute;
+    right: -35px;
+  content: '';
+  width: 11px;
+  height: 80px;
+  background-color: #5dca88;
+  }
 }
 
 
