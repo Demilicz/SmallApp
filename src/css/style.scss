@@ -240,9 +240,10 @@
   }
 }
 
-
 .learn-more {
+
     background-color: #f2f9fe;
+
   &__container {
     display: flex;
     align-items: center;
@@ -305,13 +306,17 @@
     z-index: 1;
   }
 
+  &__img2_padding {
+    padding: 60px 70px;
+  }
+
   &__img_padding {
     padding: 60px 0;
   }
 }
 
 .phones {
-
+  padding-bottom: 111px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -387,6 +392,86 @@
   }
 
 }
+
+.about {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 104px;
+    margin-bottom: 38px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 0.67;
+    text-align: left;
+    color: #636c6c;
+  }
+
+  &__sliders {
+    position: relative;
+    margin-bottom: 163px;
+    max-width: 700px;
+  }
+  .slick-slider{
+    .slick-list {
+      overflow: hidden;
+    }
+    .slick-track {
+      display: flex;
+    }
+    .slick-dots{
+      position: absolute;
+      display: flex;
+      bottom: -60px;
+      left: 300px;
+      li {
+        margin: 0 9px;
+        width: 11px;
+        height: 11px;
+        border: 1px solid  #8c9494;
+        border-radius: 50%;
+        background: #8c9494;
+      }
+      li.slick-active {
+        background: #5dca88;
+
+      }
+      li button {
+        font-size: 0;
+      }
+    }
+  }
+
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__quote {
+    margin-top: 47px;
+    margin-bottom: 27px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+    color: #8c9494;
+    font-family: 'Raleway_Thin';
+    font-weight: bolder;
+  }
+
+  &__author {
+  font-size: 24px;
+  text-align: left;
+  color: #5dca88;
+  }
+}
+
+
 
 // Suports class
 

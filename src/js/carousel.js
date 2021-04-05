@@ -4,8 +4,6 @@ $(function() {
 
   $('.phones__sliders').slick({
     draggable: false,
-    infinite: true,
-    arrows: true,
     slidesToShow: 3,
     slidesToScroll: 2,
     // responsive: [
