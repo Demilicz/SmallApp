@@ -55,10 +55,12 @@
   }
   &__item {
     margin-right: 28px;
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
+    transition: 0.3s ease 0s;
+    &:hover{
+     text-decoration: underline;
+     cursor: pointer;
     }
+
     @media screen and (max-width:905px){
       padding: 15px 0;
       background: white;
@@ -470,6 +472,139 @@
   color: #5dca88;
   }
 }
+
+.newsletter {
+
+  background-color: #f3f5f5;
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 95px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 0.67;
+    text-align: left;
+    color: #8c9494;
+  }
+
+  ._icon-message {
+    color: #5dca88;
+    margin-right: 20px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    width: 770px;
+    height: 60px;
+    overflow: hidden;
+    background-color: white;
+    border: solid 2px #bbc3c2;
+    border-radius: 30px;
+  }
+
+  &__emal {
+    padding-left: 20px;
+    flex: 0 0 70%;
+    height: 100%;
+
+
+
+    &::placeholder {
+      color: #bbc3c2;
+      opacity: 0.9;
+    }
+  }
+
+  &__emal::-moz-focus-outer{
+    outline: none;
+  }
+
+  &__btn {
+    flex: 0 0 30%;
+    height: 100%;
+    background-color: #5dca88;
+    border: 1px solid #5dca88;
+    border-radius: 30px;
+    font-family: 'proximanova-bold';
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+
+.footer {
+  background-color: #2d312f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-family: 'Raleway_Thin';
+    font-weight: bolder;
+    margin-top: 74px;
+    margin-bottom: 34px;
+    font-size: 24px;
+    text-align: left;
+    color: #8c9494;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    margin: 0 8px;
+    border: 1px solid  #5d6461;
+    border-radius: 50%;
+    background:  #5d6461;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #2d312f;
+    transition: 0.3s ease 0s;
+    &:hover{
+      background: #5dca88 ;
+      cursor: pointer;
+    }
+
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  &__contact {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: #8c9494;
+    padding: 0 8px;
+    transition: 0.3s ease 0s;
+    &:hover{
+     text-decoration: underline;
+     cursor: pointer;
+    }
+  }
+}
+
+
 
 
 
