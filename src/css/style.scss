@@ -606,6 +606,13 @@
 
 
 
+button{
+  transition: 0.3s ease 0s;
+    &:hover{
+      color: #5dca88 ;
+      cursor: pointer;
+    }
+}
 
 
 // Suports class
